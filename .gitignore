@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-#
+#data base related ignores
 *.db
 
 # C extensions
