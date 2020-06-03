@@ -13,6 +13,13 @@ cd twitoff-pt5/
 pipenv install
 ```
 
+
+
+migrate the database:
+
+```sh
+    
+```
 <!-- Usage -->
 
 ```sh
