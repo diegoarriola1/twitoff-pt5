@@ -16,5 +16,5 @@ pipenv install
 <!-- Usage -->
 
 ```sh
-FLASK_APP=hello.py flask run
+FLASK_APP=web_app flask run
 ```
