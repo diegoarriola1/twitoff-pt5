@@ -11,12 +11,11 @@ from web_app.routes.stats_routes import stats_routes
 
 
 DATABASE_URI = "sqlite:///twitoff_development_pt5.db"  # using relative filepath
-#DATABASE_URI = "sqlite:////Users/Username/Desktop/your-repo-name/web_app_99.db" # using absolute filepath on Mac (recommended)
-#DATABASE_URI = "sqlite:///C:\\Users\\Username\\Desktop\\your-repo-name\\web_app_99.db" # using absolute filepath on Windows (recommended) h/t: https://stackoverflow.com/a/19262231/670433
-
+SECRET_KEY = "temporary secret value. todo read from env var and customize on production to keep session secure."
 
 def create_app():
     app = Flask(__name__)
+    app.config["SECRET_KEY"] = SECRET_KEY
 
     app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URI
     db.init_app(app)
